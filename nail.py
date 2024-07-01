@@ -35,7 +35,9 @@ def extract_shop_data(browser):
         'y': '',
         'introduction': '',
         'facilities': [],
-        'image_url': ''
+        'image_urls': [],
+        'operating_hours': {},
+        'price_info': {}
     }
 
     try:
@@ -44,9 +46,17 @@ def extract_shop_data(browser):
         soup = BeautifulSoup(html_source, 'html.parser')
 
         # 이미지
-        image_element = soup.select_one("#app-root > div > div > div > div.CB8aP > div > div:nth-child(1) > div > a img")
-        if image_element:
-            shop_data['image_url'] = image_element['src']
+        image_selectors = [
+            "#app-root > div > div > div > div.CB8aP > div > div:nth-child(1) > div > a > img",
+            "#app-root > div > div > div > div.CB8aP > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div > a > img",
+            "#app-root > div > div > div > div.CB8aP > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div > a > img",
+            "#app-root > div > div > div > div.CB8aP > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > a > img",
+            "#app-root > div > div > div > div.CB8aP > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > a > img"
+        ]
+        for selector in image_selectors:
+            image_element = soup.select_one(selector)
+            if image_element:
+                shop_data['image_urls'].append(image_element['src'])
 
         # 가게 이름
         name_element = soup.select_one("#_title > div > span.GHAhO")
@@ -84,6 +94,30 @@ def extract_shop_data(browser):
             if y_match:
                 shop_data['y'] = y_match.group(1)
 
+        # 영업시간 정보 버튼 클릭
+        try:
+            hours_button = WebDriverWait(browser, 10).until(
+                EC.element_to_be_clickable((By.CSS_SELECTOR, "#app-root > div > div > div > div:nth-child(5) > div > div:nth-child(2) > div.place_section_content > div > div.O8qbU.pSavy > div > a"))
+            )
+            hours_button.click()
+            time.sleep(2)  # 데이터 로드를 위해 대기
+
+            # 다시 페이지 소스를 가져와서 파싱
+            html_source = browser.page_source
+            soup = BeautifulSoup(html_source, 'html.parser')
+
+            # 영업시간 추출
+            hours_elements = soup.select("div.w9QyJ")
+            for element in hours_elements:
+                day_element = element.select_one("span.i8cJw")
+                hours_element = element.select_one("div.H3ua4")
+                if day_element and hours_element:
+                    day = day_element.text.strip()
+                    hours = hours_element.text.strip()
+                    shop_data['operating_hours'][day] = hours
+        except Exception as e:
+            print(f"Error extracting operating hours: {e}")
+
         # '정보' 탭 클릭
         info_tab = WebDriverWait(browser, 10).until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, "a[href$='/information']"))
@@ -105,6 +139,35 @@ def extract_shop_data(browser):
         for facility in facilities_elements:
             facility_name = facility.select_one('.owG4q').text.strip()
             shop_data['facilities'].append(facility_name)
+
+        # '가격' 탭 클릭
+        price_tab = WebDriverWait(browser, 10).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, "a[href$='/price']"))
+        )
+        price_tab.click()
+        time.sleep(2)  # 데이터 로드를 위해 대기
+
+        # 페이지 소스를 다시 가져와서 파싱
+        html_source = browser.page_source
+        soup = BeautifulSoup(html_source, 'html.parser')
+
+        # 가격 정보 추출
+        price_categories = soup.select("#app-root > div > div > div > div:nth-child(6) > div > div > ul > li.F7pMw")
+        for category in price_categories:
+            category_name = category.select_one("div.TVniT").text.strip()
+            items = category.select("ul.JToq_ > li")
+            items_list = []
+            for item in items:
+                item_name = item.select_one("div.OJVMR > div.NdE7m > span.gqmxb")
+                item_price = item.select_one("div.dELze > em")
+                if item_name:
+                    name = item_name.text.strip()
+                    price = item_price.text.strip() if item_price else "상담"
+                    items_list.append({
+                        "name": name,
+                        "price": price
+                    })
+            shop_data['price_info'][category_name] = items_list
 
     except Exception as e:
         print(f"Error extracting data: {e}")
@@ -169,6 +232,7 @@ for json_file in json_files:
     os.makedirs(folder_name, exist_ok=True)
 
     extracted_data = []
+    missing_data = []
     file_counter = 1
 
     for shop in data:
@@ -178,9 +242,8 @@ for json_file in json_files:
         if shop_data:
             extracted_data.append(shop_data)
         else:
-            # 가게명을 없음으로 표시
-            shop['사업장명'] = f"{shop['사업장명']}_없음"
-            extracted_data.append(shop)
+            # 가게명을 없음으로 표시하고 따로 모음
+            missing_data.append(shop)
 
         # 1000개마다 파일 저장
         if len(extracted_data) >= 1000:
@@ -197,3 +260,9 @@ for json_file in json_files:
         filename = os.path.join(folder_name, f"shops_{file_counter}.json")
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(extracted_data, f, ensure_ascii=False, indent=4)
+
+    # 가게명 없음으로 표시된 데이터 저장
+    if missing_data:
+        filename = os.path.join(folder_name, f"missing_shops.json")
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(missing_data, f, ensure_ascii=False, indent=4)
