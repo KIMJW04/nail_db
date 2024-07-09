@@ -1,0 +1,574 @@
+[
+    {
+        "search_url": "https://pcmap.place.naver.com/nailshop/37196672/home",
+        "title": "원더네일",
+        "category": "네일아트,네일샵",
+        "human_review": "방문자 리뷰 26",
+        "blog_review": "블로그 리뷰 4",
+        "addresses": "서울 서대문구 독립문로12길 2",
+        "x": "126.961784",
+        "y": "37.5683539",
+        "introduction": "1:1 예약제\n고객맞춤관리\n드릴케어전문\n젤네일전문샵\n손발관리\n속눈썹연장",
+        "facilities": [
+            "속눈썹 연장",
+            "예약",
+            "무선 인터넷"
+        ],
+        "image_urls": [
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230612_86%2F1686498449819rjV8l_JPEG%2FIMG_20220521_001625_766.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230610_53%2F1686407994805szgbV_JPEG%2FIMG_20210114_233552_098.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230610_179%2F16864075281254aJ4z_JPEG%2FIMG_20230316_115422_987.jpg"
+        ],
+        "operating_hours": {
+            "화": "10:00 - 21:00",
+            "수": "10:00 - 21:00",
+            "목": "10:00 - 21:00",
+            "금": "10:00 - 21:00",
+            "토": "10:00 - 21:00",
+            "일": "정기휴무 (매주 일요일)",
+            "월": "10:00 - 21:00"
+        },
+        "price_info": {
+            "매니큐어": [
+                {
+                    "name": "손기본(케어+영양제+oil각질드릴링)",
+                    "price": "20,000"
+                }
+            ],
+            "페디큐어": [
+                {
+                    "name": "발기본(케어+oil각질드릴링)",
+                    "price": "30,000"
+                }
+            ],
+            "손 젤": [
+                {
+                    "name": "젤 손기본(케어+젤컬러)",
+                    "price": "50,000"
+                },
+                {
+                    "name": "월 프렌치 젤아트(매월 디자인변경)",
+                    "price": "65,000"
+                }
+            ],
+            "발 젤": [
+                {
+                    "name": "젤 발기본(케어+젤컬러)",
+                    "price": "60,000"
+                }
+            ],
+            "속눈썹": [
+                {
+                    "name": "속눈썹펌",
+                    "price": "40,000"
+                },
+                {
+                    "name": "속눈썹연장",
+                    "price": "50,000"
+                }
+            ]
+        }
+    },
+    {
+        "search_url": "https://pcmap.place.naver.com/nailshop/545014885/home",
+        "title": "피치네일",
+        "category": "네일아트,네일샵",
+        "human_review": "블로그 리뷰 1",
+        "blog_review": "",
+        "addresses": "서울 영등포구 디지털로37길 21",
+        "x": "126.8981061",
+        "y": "37.4906152",
+        "introduction": "",
+        "facilities": [
+            "속눈썹 연장",
+            "심야영업",
+            "예약",
+            "무선 인터넷",
+            "반려동물 동반"
+        ],
+        "image_urls": [
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170814_121%2F1502701418221hjpSC_JPEG%2FGm_0WL2dseiBXc9IfLImHCXN.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170814_141%2F1502701462081JvGJg_JPEG%2FB1xTnWDj1Z1UR-ajAgHeNVpw.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170814_124%2F1502701487524Era45_JPEG%2FUsoOC94HeSDGeWjQ4-VoB7yp.jpg"
+        ],
+        "operating_hours": {
+            "화": "11:00 - 22:00",
+            "수": "11:00 - 22:00",
+            "목": "11:00 - 22:00",
+            "금": "11:00 - 22:00",
+            "토": "정보없음",
+            "일": "정보없음",
+            "월": "11:00 - 22:00"
+        },
+        "price_info": {
+            "매니큐어": [
+                {
+                    "name": "케어+원컬러",
+                    "price": "18,000"
+                }
+            ],
+            "페디큐어": [
+                {
+                    "name": "케어+원컬러",
+                    "price": "23,000"
+                }
+            ],
+            "손 젤": [
+                {
+                    "name": "원컬러",
+                    "price": "35,000"
+                },
+                {
+                    "name": "프렌치",
+                    "price": "45,000"
+                },
+                {
+                    "name": "그라데이션",
+                    "price": "55,000"
+                }
+            ],
+            "발 젤": [
+                {
+                    "name": "원컬러",
+                    "price": "45,000"
+                }
+            ]
+        }
+    },
+    {
+        "search_url": "https://pcmap.place.naver.com/nailshop/1337583486/home",
+        "title": "포쉬네일 영등포점",
+        "category": "네일아트,네일샵",
+        "human_review": "방문자 리뷰 901",
+        "blog_review": "블로그 리뷰 257",
+        "addresses": "서울 영등포구 영중로 119 리마크빌영등포 2층",
+        "x": "126.9051641",
+        "y": "37.526986",
+        "introduction": "포쉬네일 영등포점은 손발톱케어, 젤네일아트, 내성발톱교정, 발각질관리, 핸드스파, 풋스파 등 전문적인 서비스를 제공해 드리고 있습니다.\n1회용 위생키트를 사용하며, 멸균기가 매장에 구비되어 있어 푸셔, 니퍼등 네일도구를 위생적으로 관리하고 있습니다.\n매일 매장 소독과 환기를 진행하고 있으니 안심하고 방문 해 주세요 ^^\n\n*주차권안내*\n-2만원이상 시술시 주차권 발급해드립니다.\n\n[고객님~네이버예약시 꼭!~확인해주세요!]\n\n1)예약금 결제가 완료되어도 매장 예약상황상 시술이 어려울경우 고객님과 통화가 연결이되지않으면 자동취소되는점 양해 부탁드립니다\n\n2)젤제거 유.무 필수 선택\n\n3)젤제거 또는 아트 추가 하실경우 체크 필수\n(미체크시 오버타임으로 인해 시술이\n어려우실 수 있는점 양해부탁드립니다)\n-아트 유.무 필수 선택\n\n[사전 예약주신 고객님]\n-취소 및 환불은 예약일 이틀전,영업\n마감시간전까지 환불 가능 하세요\n\n[당일 예약주신 고객님]\n-예약시간 최소 두시간전 환불 및 취소 가능합니다\n\n해당 시간이후 환불 및 취소,변경이\n불가한점 양해 부탁드립니다\n\n예약을 원하시는 많은 분들의 원할한\n시간 관리를 위하여 저희 포쉬네일은\n노쇼를 예방하고있습니다\n모든분들의 소중한 시간을 소중히여기고자 진행하는부분인만큼 신중한 예약 부탁드립니다.\n\n소중한 사람들과의 약속이 중요한 만큼 저희 포쉬네일도 고객님과의 약속을\n소중히 여기겠습니다 감사드리겠습니다.",
+        "facilities": [
+            "예약",
+            "무선 인터넷",
+            "남/녀 화장실 구분",
+            "반려동물 동반"
+        ],
+        "image_urls": [
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240507_125%2F17150444221708X4Lk_JPEG%2F920A9484-10E6-4AEE-A362-9B17CDEAF92F.jpeg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240507_36%2F17150445677870fUJG_JPEG%2FAC7C3332-B8BA-4E3B-B68D-4E044F513DA3.jpeg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240507_89%2F1715044598327sB4SV_JPEG%2FE82A3F5D-85E5-469F-934E-10E44A022A25.jpeg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240507_33%2F1715044577038qOxvM_JPEG%2FA0EF43E9-6E29-4E90-9DC4-5C6AB9EC8688.jpeg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240403_232%2F1712120984648AhdxU_PNG%2F7900ED7A-D10A-4206-8247-113B74885B15.png"
+        ],
+        "operating_hours": {
+            "화": "11:00 - 21:00",
+            "수": "11:00 - 21:00",
+            "목": "11:00 - 21:00",
+            "금": "11:00 - 21:00",
+            "토": "11:00 - 21:00",
+            "일": "11:00 - 21:00",
+            "월": "11:00 - 21:00"
+        },
+        "price_info": {
+            "매니큐어": [
+                {
+                    "name": "첫방문 손관리",
+                    "price": "25,900"
+                }
+            ],
+            "손 젤": [
+                {
+                    "name": "손/케어+손젤 원톤(첫방문)",
+                    "price": "40,000"
+                },
+                {
+                    "name": "이달의아트(첫방문가)",
+                    "price": "상담"
+                }
+            ],
+            "발 젤": [
+                {
+                    "name": "발/케어+발젤 원톤(첫방문)",
+                    "price": "50,000"
+                }
+            ],
+            "발 울트라": [
+                {
+                    "name": "각질관리(첫방문)",
+                    "price": "59,000"
+                }
+            ],
+            "기타": [
+                {
+                    "name": "파고드는 발톱 상담(예약금)",
+                    "price": "20,000"
+                },
+                {
+                    "name": "남자손케어(첫방문가)",
+                    "price": "25,000"
+                }
+            ]
+        }
+    },
+    {
+        "search_url": "https://pcmap.place.naver.com/restaurant/36250316/home",
+        "title": "수다",
+        "category": "바(BAR)",
+        "human_review": "방문자 리뷰 3",
+        "blog_review": "블로그 리뷰 9",
+        "addresses": "서울 영등포구 양산로 52 B1",
+        "x": "126.8958251",
+        "y": "37.525736",
+        "introduction": "칵테일맛집 분위기맛집 와인맛집",
+        "facilities": [
+            "예약",
+            "단체 이용 가능",
+            "무선 인터넷"
+        ],
+        "image_urls": [],
+        "operating_hours": {},
+        "price_info": {}
+    },
+    {
+        "search_url": "https://pcmap.place.naver.com/nailshop/1504214385/home",
+        "title": "꽃네일",
+        "category": "네일아트,네일샵",
+        "human_review": "방문자 리뷰 1",
+        "blog_review": "",
+        "addresses": "서울 영등포구 도림로39길 5",
+        "x": "126.8967015",
+        "y": "37.4935983",
+        "introduction": "",
+        "facilities": [],
+        "image_urls": [
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20201020_115%2F1603156824723MDUe1_JPEG%2FuL5BahTiSEeM6FiuMexs9cPd.jpeg.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210710_34%2F1625911372612Xl3rz_JPEG%2FzCrdrKcjELpPFKyq1ynskit0.jpeg.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210710_130%2F1625911386526XVxBx_JPEG%2F20y15EYpGZAXMFTwF5v7QIKo.jpeg.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210710_177%2F1625911400160n0Cjt_JPEG%2FYYvP8A5MIz0YJfUH136EYQRh.jpeg.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210710_294%2F1625911415475wswVn_JPEG%2FvvW1LN72iSjY98KMdFNb698w.jpeg.jpg"
+        ],
+        "operating_hours": {
+            "화": "11:00 - 22:00",
+            "수": "11:00 - 22:00",
+            "목": "11:00 - 22:00",
+            "금": "11:00 - 22:00",
+            "토": "12:00 - 20:00",
+            "일": "12:00 - 20:00",
+            "월": "11:00 - 22:00"
+        },
+        "price_info": {}
+    },
+    {
+        "search_url": "https://pcmap.place.naver.com/nailshop/1861343230/home",
+        "title": "네일라피네",
+        "category": "네일아트,네일샵",
+        "human_review": "",
+        "blog_review": "방문자 리뷰 241",
+        "addresses": "서울 영등포구 의사당대로 127 롯데캐슬엠파이어 112호",
+        "x": "126.9264116",
+        "y": "37.5201766",
+        "introduction": "젤네일,젤패디등을 전문으로 하는 네일샵입니다.\n사전예약제로 운영됩니다.\n 다수의 수상과 강의, 살롱실무등 경력의 원장이 직접 운영하며, 최신트랜드 젤네일 아트샘플을 보유하고 있으며, 국내외 네일전문 강사로도 함께 일하며 직원들에게 새로운 기술과 아트디자인 등을 끊임없이 교육하여 모든면에서 뒤쳐지지 않는 앞서가는 샵을 만들어 나가고 있습니다\n. 웃음이 끊기지 않는 가족같은 분위기의 네일살롱으로 관리내내 편안하고 즐거운 마음으로 관리 받으실수 있습니다. 네일라피네에서 아름다움을 만들어 드립니다. 소중한 당신의 손을 최고의 전문가에게 맡겨주세요~^^",
+        "facilities": [
+            "예약",
+            "무선 인터넷",
+            "반려동물 동반",
+            "남/녀 화장실 구분"
+        ],
+        "image_urls": [
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180830_184%2F1535628350705Sb3J8_JPEG%2FTF6IlBi7d_nKMgrzCHpkF3lQ.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180904_243%2F1536036850988XytXM_JPEG%2Fagxtyv2pqqtPb46mUIiJaZT3.JPG.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180831_268%2F1535684596115NYXEn_JPEG%2Ft4oj1pWOgsPNkFid3_j0hWK6.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180830_32%2F1535628549230qdwL0_JPEG%2FXXWm6gpCoz3l7wxoi1wTd_J5.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180611_134%2F1528703399245zftpg_JPEG%2FHxKcRCkior6RYIoquTbtFAXe.jpg"
+        ],
+        "operating_hours": {
+            "화": "11:30 - 21:00",
+            "수": "11:30 - 21:00",
+            "목": "11:30 - 21:00",
+            "금": "11:30 - 21:00",
+            "토": "11:30 - 19:00",
+            "일": "정기휴무 (매주 일요일)",
+            "월": "11:30 - 21:00"
+        },
+        "price_info": {
+            "매니큐어": [
+                {
+                    "name": "네일케어",
+                    "price": "17,000"
+                },
+                {
+                    "name": "남성케어",
+                    "price": "27,000"
+                }
+            ],
+            "페디큐어": [
+                {
+                    "name": "페디케어",
+                    "price": "27,000"
+                }
+            ],
+            "손 젤": [
+                {
+                    "name": "젤(NAIL)",
+                    "price": "45,000"
+                }
+            ],
+            "발 젤": [
+                {
+                    "name": "젤(PEDI)",
+                    "price": "55,000"
+                }
+            ]
+        }
+    },
+    {
+        "search_url": "https://pcmap.place.naver.com/hairshop/20632913/home",
+        "title": "신데렐라",
+        "category": "미용실",
+        "human_review": "방문자 리뷰 11",
+        "blog_review": "",
+        "addresses": "서울 영등포구 영등포로 410",
+        "x": "126.923335",
+        "y": "37.512887",
+        "introduction": "",
+        "facilities": [],
+        "image_urls": [],
+        "operating_hours": {},
+        "price_info": {}
+    },
+    {
+        "search_url": "https://pcmap.place.naver.com/nailshop/1885185112/home",
+        "title": "체리손톱",
+        "category": "네일아트,네일샵",
+        "human_review": "블로그 리뷰 1",
+        "blog_review": "",
+        "addresses": "서울 서초구 신반포로 100 지하1층",
+        "x": "126.9957048",
+        "y": "37.5030869",
+        "introduction": "신규고객 20%할인 30년경력젤네일전문샵 신반포역1분",
+        "facilities": [],
+        "image_urls": [
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240404_67%2F1712204318385Ee0VD_JPEG%2FIMG_1895.jpeg"
+        ],
+        "operating_hours": {
+            "화": "10:00 - 20:00",
+            "수": "10:00 - 20:00",
+            "목": "10:00 - 20:00",
+            "금": "10:00 - 20:00",
+            "토": "10:00 - 20:00",
+            "일": "정기휴무 (매주 일요일)",
+            "월": "10:00 - 20:00"
+        },
+        "price_info": {}
+    },
+    {
+        "search_url": "https://pcmap.place.naver.com/nailshop/1129173137/home",
+        "title": "뷰티크 네일 속눈썹",
+        "category": "네일아트,네일샵",
+        "human_review": "방문자 리뷰 59",
+        "blog_review": "블로그 리뷰 12",
+        "addresses": "서울 영등포구 국제금융로 86 롯데캐슬 IVY 상가 1층 116호",
+        "x": "126.9321087",
+        "y": "37.5197969",
+        "introduction": "모든 젤 제거 '무료' / 주차 무료 / 2인 동시 시술 / 이달의아트 행사 / 정품 스와 100% / 퀄리티 있는 아트 / 친절하고 꼼꼼한 샵입니다.",
+        "facilities": [
+            "속눈썹 연장",
+            "예약",
+            "무선 인터넷",
+            "반려동물 동반",
+            "남/녀 화장실 구분",
+            "장애인 휠체어 이용가능",
+            "출입구 휠체어 이용가능",
+            "좌석 휠체어 이용가능"
+        ],
+        "image_urls": [
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240315_250%2F1710509449522qQcsy_PNG%2FIMG_1177.png",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240315_40%2F1710509382207zx2F4_JPEG%2FIMG_1205.jpeg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240315_300%2F17105084546248yGbA_JPEG%2FIMG_1202.jpeg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240315_3%2F1710508434650vG36U_JPEG%2FIMG_1201.jpeg"
+        ],
+        "operating_hours": {
+            "화": "10:00 - 20:00",
+            "수": "10:00 - 20:00",
+            "목": "10:00 - 20:00",
+            "금": "10:00 - 20:00",
+            "토": "10:00 - 20:00",
+            "일": "정기휴무 (매주 일요일)",
+            "월": "10:00 - 20:00"
+        },
+        "price_info": {
+            "손 젤": [
+                {
+                    "name": "이달의 아트",
+                    "price": "79,000"
+                },
+                {
+                    "name": "손젤",
+                    "price": "50,000"
+                }
+            ],
+            "발 젤": [
+                {
+                    "name": "발젤",
+                    "price": "60,000"
+                }
+            ],
+            "젤제거": [
+                {
+                    "name": "모든 젤 제거 (자샵/타샵) 무료",
+                    "price": "상담"
+                }
+            ]
+        }
+    },
+    {
+        "search_url": "https://pcmap.place.naver.com/nailshop/598075146/home",
+        "title": "뽐네일",
+        "category": "네일아트,네일샵",
+        "human_review": "방문자 리뷰 3",
+        "blog_review": "블로그 리뷰 1",
+        "addresses": "서울 영등포구 도신로4길 6 현대2차아파트",
+        "x": "126.8954306",
+        "y": "37.5032073",
+        "introduction": "신도림,대림역에서 가까운 대림동현대2차아파트 상가에 위치한 네일샵「뽐Nail」 입니다.",
+        "facilities": [
+            "예약"
+        ],
+        "image_urls": [
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170802_112%2F1501647890405r9jJU_JPEG%2F186752535470293_0.jpeg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170802_180%2F1501647890489sw3HH_JPEG%2F186752535470293_1.jpeg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170802_154%2F1501647890557G7FAg_JPEG%2F186752535470293_2.jpeg"
+        ],
+        "operating_hours": {
+            "화": "10:00 - 20:00",
+            "수": "10:00 - 20:00",
+            "목": "10:00 - 20:00",
+            "금": "10:00 - 20:00",
+            "토": "10:00 - 20:00",
+            "일": "정기휴무 (매주 일요일)",
+            "월": "10:00 - 20:00"
+        },
+        "price_info": {
+            "손 젤": [
+                {
+                    "name": "케어+젤네일",
+                    "price": "상담"
+                }
+            ],
+            "발 젤": [
+                {
+                    "name": "케어+젤패디",
+                    "price": "상담"
+                }
+            ]
+        }
+    },
+    {
+        "search_url": "https://pcmap.place.naver.com/nailshop/1278016908/home",
+        "title": "향네일",
+        "category": "네일아트,네일샵",
+        "human_review": "방문자 리뷰 4",
+        "blog_review": "블로그 리뷰 1",
+        "addresses": "서울 영등포구 도신로64길 14 1F",
+        "x": "126.9189164",
+        "y": "37.5122164",
+        "introduction": "",
+        "facilities": [
+            "속눈썹 연장",
+            "예약",
+            "무선 인터넷"
+        ],
+        "image_urls": [
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210704_36%2F16253890477596IdS7_JPEG%2Fb4rZPfo2pSmSHHeeefTknLSh.jpeg.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220314_170%2F1647262691157qJr0a_JPEG%2F79B3F3DA-3580-458A-90E0-4386FFBD008E.jpeg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220314_4%2F16472626795890hzaT_JPEG%2F8A3EA12E-F616-4282-A850-1EDCF757D42D.jpeg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220314_188%2F16472626859165FuCO_JPEG%2FEAE1B5A0-9225-4BA7-B53B-4B41C3D2BD15.jpeg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220314_82%2F1647262685195T7NVS_JPEG%2FDF316476-6E78-4BDA-AF30-47D80A0B85B8.jpeg"
+        ],
+        "operating_hours": {
+            "화": "11:00 - 21:00",
+            "수": "11:00 - 21:00",
+            "목": "11:00 - 21:00",
+            "금": "11:00 - 21:00",
+            "토": "11:00 - 18:00",
+            "일": "정기휴무 (매주 일요일)",
+            "월": "11:00 - 21:00"
+        },
+        "price_info": {
+            "손 젤": [
+                {
+                    "name": "케어+원컬러(오버레이포함)",
+                    "price": "40,000"
+                }
+            ],
+            "발 젤": [
+                {
+                    "name": "케어+원컬러(오버레이포함)",
+                    "price": "50,000"
+                }
+            ]
+        }
+    },
+    {
+        "search_url": "https://pcmap.place.naver.com/nailshop/1093074110/home",
+        "title": "아뜰리에 제이",
+        "category": "네일아트,네일샵",
+        "human_review": "방문자 리뷰 4,389",
+        "blog_review": "블로그 리뷰 148",
+        "addresses": "서울 영등포구 선유서로24길 6 1층 111호",
+        "x": "126.8860621",
+        "y": "37.5233341",
+        "introduction": "1.첫방문할인서비스\n\n첫방문할인 총 3번 손.발.속눈썹 각 각 딱 한번씩 총 3번 이용가능해용~ 예를들어 같은 날 한번에 손.발 하셔도 좋고 각각 다른날에 이용하셔도 적용됩니다~ 모든서비스 첫방문할인으로 만나보세용^^\n\n2.선생님들경력 모두10년이상\n\n저희샵은 초보나 기술력이 부족한 시술자는 없습니다\n믿고 맡겨주세요!\n\n3.상세 메뉴 및 가격\n\n원하시는 선생님 선택 후 날짜.시간 선택 하시면 쫘악 나옵니당~\n\n동시2인 예약가능합니당\n\n네일아트는 매주 일요일 휴무/ 속눈썹&왁싱은 둘째 넷째 일요일휴무\n\n찐 방문자 리뷰 4000개 돌파!!\n경력 10년 이상 전문가 쌤들이 서비스 마인드 탑재한 가성비 좋은 뷰티샵\n\n'이벤트 하나'\n\n 첫방문시 할인혜택 방법\n1. 네이버예약 [완전첫방문] 메뉴 선택 및 예약 후 방문\n2. 네이버쿠폰 [발급받기]\n3. 결제 전 [리뷰등록 후] 쿠폰사용\n\n첫방문 현금가 이벤트\n손젤 35,000원\n발젤 45,000원\n타샵젤제거5000원(젤시술시가능)\n속눈썹연장 40,000원\n속눈썹펌 30,000원\n\n'이벤트 둘'\n\n재방문 할인혜택 방법\n저희샵은 시술별(손,발,속눈썹) 각각 딱 한번씩 첫방문가격으로 총 세번 할인해드려요!\n\n손한번.발한번.속눈썹한번 이렇게용!!\n같은메뉴 중복 첫방문할인 안되십니당ㅜ\n\n'이벤트 셋'\n\n할인 다~~받아서 더 이상 할인이 없으면!!?\n네이버예약 후 리뷰 작성 시 2,000원 할인해드립니다^^\n[리뷰할인 2000원 쿠폰받기] 클릭해주세요\n\n첫방문 & 재방문 네이버 쿠폰 발급받고, 현금가 이벤트까지 챙겨가세요!!\n\n예약 문의 방법\n1. 네이버 예약\n2. 매장 전화 02-6339-9690\n3, 카카오톡 0263399690 검색 > 아뜰리에제이_뷰티살롱 채널 가입 후 예약문의 톡(확인이 늦을수있어서 당일예약 및 급한문의는 매장으로 전화주세요)\n\n첫방문 현금가 이벤트\n\n-손 원칼라 35000원\n-발 원칼라 45000원\n-타샵젤제거 개당 500원\n(본샵에서 새로 젤시술시)\n-이달의 아트 첫방문 현금가 64.000 / 74.000\n\n아뜰리에제이는 고 경력자들만 있는 샵입니다!\n손도 빠르시고 꼼꼼하게 잘하셔서 경력맛집이에요\n\n-시술시간이 너무오래걸려서 힘드셨던분\n-너무빨리까져서 짜증났던분\n-지져분한 샵에서 오래된 도구들로 찝찝했던분\n\n저희샵에 오셔서 오랫만에 힐링하고가세요!\n\n장기간동안 단골 짱 많은 웬디쌤도,\n새로와서 단골잡기에 여념없는 친절한 고경력자\n리나쌤도 좋아용!\n\n-빌더젤.오버레이 탑젤사용 / 추가요금없이 튼튼하게\n\n-일주일 이내 보수 무료\n(보수한적없는듯요 쌤들이 완벽주의자 )\n유지력이... 원장인 제가 맨날얘기해요..\n\n쌤.... 울샵유지력이 너~무 좋은거 아는데... 조금만 좋음 안될까요...ㅋㅋㅋㅋㅋㅋㅋ\n\n-젤 제거시 손상 최소화 (기계로만 다 제거해서 울퉁불퉁 손상되는거 젤 혐오하는 울쌤들)\n중고재료.저렴한제품사용 거부\n\n-정품 스와로브스키만 사용\n(인증재료상공개가능)\n\n-진짜 찐 경력자들만 있어요",
+        "facilities": [
+            "왁싱",
+            "속눈썹 연장",
+            "예약",
+            "무선 인터넷",
+            "남/녀 화장실 구분"
+        ],
+        "image_urls": [
+            "https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=https%3A%2F%2Fvideo-phinf.pstatic.net%2F20240611_43%2F1718090753200qlYY1_JPEG%2F5P11wO7eoL_03.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220525_215%2F1653457753191E7OGE_JPEG%2F%25BB%25FD%25C8%25AD.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220505_293%2F1651719440107MUOhi_JPEG%2F20220501_115513.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220505_34%2F16517195669242Dl5S_JPEG%2FIMG_20220503_213556_652.jpg",
+            "https://search.pstatic.net/common/?autoRotate=true&type=w278_sharpen&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220505_222%2F1651719553980JSc3s_JPEG%2FIMG_20220503_213700_950.jpg"
+        ],
+        "operating_hours": {
+            "화": "10:00 - 21:00",
+            "수": "10:00 - 21:00",
+            "목": "10:00 - 21:00",
+            "금": "10:00 - 21:00",
+            "토": "10:00 - 21:00",
+            "일": "10:00 - 16:00",
+            "월": "10:00 - 21:00"
+        },
+        "price_info": {
+            "손 젤": [
+                {
+                    "name": "[첫방문현금]손젤원칼라",
+                    "price": "35,000"
+                }
+            ],
+            "발 젤": [
+                {
+                    "name": "[첫방문현금]발젤원칼라",
+                    "price": "45,000"
+                }
+            ],
+            "속눈썹": [
+                {
+                    "name": "[첫방문현금]속눈썹펌set",
+                    "price": "35,000"
+                },
+                {
+                    "name": "[첫방문현금]속눈썹연장실크모100%",
+                    "price": "40,000"
+                }
+            ],
+            "왁싱": [
+                {
+                    "name": "[첫방문현금]브라질왁싱",
+                    "price": "50,000"
+                }
+            ]
+        }
+    }
+]
