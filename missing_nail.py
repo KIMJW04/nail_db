@@ -13,10 +13,10 @@ import re
 import time
 
 # JSON 파일들이 있는 디렉터리
-json_dir = 'C:\\Users\\KJW04\\OneDrive\\Documents\\GitHub\\nail_db\\missing_list\\'
+json_dir = 'C:\\Users\\KJW04\\OneDrive\\Documents\\GitHub\\nail_db\\'
 
 # JSON 파일 목록 생성
-json_files = [f for f in os.listdir(json_dir) if f.endswith('_missing_nail_shops.json')]
+json_files = [f for f in os.listdir(json_dir) if f.endswith('merged_missing_shops.json')]
 
 # 웹드라이브 설치
 service = ChromeService(executable_path=ChromeDriverManager().install())
@@ -177,39 +177,59 @@ def extract_shop_data(browser):
 def search_shop(shop, browser):
     address_parts = shop['도로명전체주소'].split()[:2]
     search_address = " ".join(address_parts)
-    full_address = f"{search_address} {shop['사업장명']}"
+    full_address = f"{shop['사업장명']} {search_address}"
     encoded_query = urllib.parse.quote(full_address)
-    url = f"https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query={encoded_query}"
+    url = f"https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query={encoded_query}"
 
     browser.get(url)
+
+    place_id = None
 
     try:
         # 검색 결과가 로드될 때까지 대기
         WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.ID, "place-app-root")))
 
-        # place-app-root에서 첫 번째 링크의 href 속성 추출
-        first_link = WebDriverWait(browser, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "#loc-main-section-root > section > div > div.rdX0R.HXTER > ul > li:nth-child(1) > div.qbGlu > div.ouxiq > a:nth-child(3)"))
-        )
-        first_link_href = first_link.get_attribute('href')
+        try:
+            # 지정된 셀렉터로 엘리먼트를 찾아서 data-loc_plc-doc-id 값을 추출
+            target_element = WebDriverWait(browser, 5).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "#loc-main-section-root > section > div > div.XJdTz"))
+            )
+            data_loc_plc_doc_id = target_element.get_attribute('data-loc_plc-doc-id')
+            if data_loc_plc_doc_id:
+                print(f"Found data-loc_plc-doc-id: {data_loc_plc_doc_id}")
+                place_id = data_loc_plc_doc_id
+            else:
+                print(f"data-loc_plc-doc-id not found for {shop['사업장명']}")
+        except Exception as e:
+            print(f"Element not found using specific selector, trying fallback method. Error: {e}")
 
-        # place_id 추출
-        place_id_match = re.search(r'/place/(\d+)', first_link_href)
-        if not place_id_match:
+        # 첫 번째 방법으로 place_id를 찾지 못한 경우에만 두 번째 방법을 시도
+        if not place_id:
+            # place-app-root에서 첫 번째 링크의 href 속성 추출
+            first_link = WebDriverWait(browser, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "#place-app-root #_title > a"))
+            )
+            first_link_href = first_link.get_attribute('href')
+
+            # place_id 추출
+            place_id_match = re.search(r'place/(\d+)', first_link_href)
+            if place_id_match:
+                place_id = place_id_match.group(1)
+
+        if place_id:
+            print(f"Place ID: {place_id}, 검색어: {full_address}")  # 검색어와 place_id 출력
+
+            place_url = f"https://pcmap.place.naver.com/place/{place_id}/home"
+
+            # 실제 장소 페이지로 이동
+            browser.get(place_url)
+
+            # 데이터 추출
+            shop_data = extract_shop_data(browser)
+            return shop_data
+        else:
             print(f"Place ID not found for {shop['사업장명']}")
             return None
-
-        place_id = place_id_match.group(1)
-        print(f"Place ID: {place_id}, 검색어: {full_address}")  # 검색어와 place_id 출력
-
-        place_url = f"https://pcmap.place.naver.com/place/{place_id}/home"
-
-        # 실제 장소 페이지로 이동
-        browser.get(place_url)
-
-        # 데이터 추출
-        shop_data = extract_shop_data(browser)
-        return shop_data
 
     except Exception as e:
         print(f"Error navigating to search result for {shop['사업장명']}: {e}")
@@ -246,7 +266,7 @@ for json_file in json_files:
             missing_data.append(shop)
 
         # 1000개마다 파일 저장
-        if len(extracted_data) >= 1000:
+        if len(extracted_data) >= 100:
             filename = os.path.join(folder_name, f"shops_{file_counter}.json")
             with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(extracted_data, f, ensure_ascii=False, indent=4)
