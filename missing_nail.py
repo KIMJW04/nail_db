@@ -16,7 +16,7 @@ import time
 json_dir = 'C:\\Users\\KJW04\\OneDrive\\Documents\\GitHub\\nail_db\\'
 
 # JSON 파일 목록 생성
-json_files = [f for f in os.listdir(json_dir) if f.endswith('merged_missing_shops.json')]
+json_files = [f for f in os.listdir(json_dir) if f.endswith('missing_shops_real_end.json')]
 
 # 웹드라이브 설치
 service = ChromeService(executable_path=ChromeDriverManager().install())
@@ -175,11 +175,9 @@ def extract_shop_data(browser):
     return shop_data
 
 def search_shop(shop, browser):
-    address_parts = shop['도로명전체주소'].split()[:2]
-    search_address = " ".join(address_parts)
-    full_address = f"{shop['사업장명']} {search_address}"
+    full_address = f"{shop['사업장명']}"
     encoded_query = urllib.parse.quote(full_address)
-    url = f"https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query={encoded_query}"
+    url = f"https://map.naver.com/p/search/{encoded_query}/"
 
     browser.get(url)
 
@@ -187,34 +185,49 @@ def search_shop(shop, browser):
 
     try:
         # 검색 결과가 로드될 때까지 대기
-        WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.ID, "place-app-root")))
+        WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.ID, "entryIframe")))
 
         try:
             # 지정된 셀렉터로 엘리먼트를 찾아서 data-loc_plc-doc-id 값을 추출
-            target_element = WebDriverWait(browser, 5).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "#loc-main-section-root > section > div > div.XJdTz"))
+            iframe_element = WebDriverWait(browser, 5).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "#entryIframe"))
             )
-            data_loc_plc_doc_id = target_element.get_attribute('data-loc_plc-doc-id')
-            if data_loc_plc_doc_id:
-                print(f"Found data-loc_plc-doc-id: {data_loc_plc_doc_id}")
-                place_id = data_loc_plc_doc_id
-            else:
-                print(f"data-loc_plc-doc-id not found for {shop['사업장명']}")
-        except Exception as e:
-            print(f"Element not found using specific selector, trying fallback method. Error: {e}")
-
-        # 첫 번째 방법으로 place_id를 찾지 못한 경우에만 두 번째 방법을 시도
-        if not place_id:
-            # place-app-root에서 첫 번째 링크의 href 속성 추출
-            first_link = WebDriverWait(browser, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "#place-app-root #_title > a"))
-            )
-            first_link_href = first_link.get_attribute('href')
-
-            # place_id 추출
-            place_id_match = re.search(r'place/(\d+)', first_link_href)
+            iframe_src = iframe_element.get_attribute('src')
+            place_id_match = re.search(r'place/(\d+)', iframe_src)
             if place_id_match:
+                    place_id = place_id_match.group(1)
+        except Exception as e:
+            print(f"Iframe not found or src attribute not found. Error: {e}")
+
+        if not place_id:
+            # 도로명 주소의 첫 번째 단어와 사업장명을 이용해 검색
+            address_parts = shop['도로명전체주소'].split()[:1]
+            search_address = " ".join(address_parts)
+            full_address = f"{search_address} {shop['사업장명']}"
+            encoded_query = urllib.parse.quote(full_address)
+            url = f"https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query={encoded_query}"
+
+            browser.get(url)
+
+            try:
+                # 검색 결과가 로드될 때까지 대기
+                WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.ID, "wrap")))
+
+                # wra[에서 첫 번째 링크의 href 속성 추출
+                first_link = WebDriverWait(browser, 10).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "#_title > a"))
+                )
+                first_link_href = first_link.get_attribute('href')
+
+                # place_id 추출
+                place_id_match = re.search(r'place/(\d+)', first_link_href)
+                if not place_id_match:
+                    print(f"Place ID not found for {shop['사업장명']}")
+                    return None
+
                 place_id = place_id_match.group(1)
+            except Exception as e:
+                print(f"Element not found using fallback selector. Error: {e}")
 
         if place_id:
             print(f"Place ID: {place_id}, 검색어: {full_address}")  # 검색어와 place_id 출력
